@@ -20,9 +20,6 @@ const Leads = sequelize.define({
     }
 },{versionKey:false,timestamps:true});
 
-const createLeads =async()=>{
-    await Leads.sync({force:true});
-    console.log('Leads table is created');
-}
 
-module.exports = {Leads,createLeads};
+
+module.exports = {Leads};
